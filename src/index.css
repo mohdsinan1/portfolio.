@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Selection styles */
+::selection {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Typography enhancements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+p {
+  font-weight: 300;
+}
+
+/* Loading Animation */
+@keyframes loading-line {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-loading-line {
+  animation: loading-line 2s ease-in-out infinite;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Elegant hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+}
+
+/* Border animations */
+.border-animate {
+  position: relative;
+  overflow: hidden;
+}
+
+.border-animate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+  transition: left 0.5s;
+}
+
+.border-animate:hover::before {
+  left: 100%;
+}
+
+/* Classic underline effect */
+.classic-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.classic-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.classic-underline:hover::after {
+  width: 100%;
+}
+
+/* Refined spacing */
+.section-padding {
+  padding: 6rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 4rem 0;
+  }
+}
+
+/* Enhanced form styles */
+input, textarea {
+  font-family: 'Inter', sans-serif;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 1px #ffffff;
+}
+
+/* Elegant button styles */
+.btn-classic {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-classic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.btn-classic:hover::before {
+  left: 0;
+}
+
+.btn-classic:hover {
+  color: #000000;
+}
+
+/* Minimalist grid lines */
+.grid-lines {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Elegant dividers */
+.divider {
+  width: 60px;
+  height: 1px;
+  background: #ffffff;
+  margin: 2rem 0;
+}
+
+/* Classic typography scale */
+.text-display {
+  font-size: clamp(3rem, 8vw, 8rem);
+  line-height: 0.9;
+  font-weight: 300;
+}
+
+.text-headline {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+/* Refined spacing system */
+.space-y-elegant > * + * {
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .space-y-elegant > * + * {
+    margin-top: 2rem;
+  }
+}
+
+/* Scroll Progress Enhancements */
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #ffffff, #cccccc);
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Vertical Progress Indicator */
+.vertical-progress {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Loading Screen Enhancements */
+.loading-screen {
+  background: radial-gradient(circle at center, #111111 0%, #000000 100%);
+}
+
+.loading-text {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Smooth scroll behavior */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .border-gray-800 {
+    border-color: #ffffff;
+  }
+  
+  .text-gray-400 {
+    color: #cccccc;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
