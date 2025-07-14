@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ContactForm from "./components/ContactForm";
+import ContactForm from './components/ContactForm';
 
 import {
   Menu,
@@ -20,7 +20,7 @@ import {
   ArrowRight,
   ChevronDown,
   User,
-  Briefcase
+  Briefcase,
 } from 'lucide-react';
 
 function App() {
@@ -78,76 +78,79 @@ function App() {
     { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'contact', label: 'Contact' },
   ];
 
   const experiences = [
-    
     {
-      title: "Full Stack Developer Internship",
-      company: "Upcode",
-      duration: "2024 - 2025",
-      description: "Built full stack web and mobile applications through self-guided learning and practice. Gained hands-on experience in modern frameworks, databases, and best development practices.",
-      technologies: ["Next", "PostgreSQL", "java", "Mongodb"]
+      title: 'Full Stack Developer Internship',
+      company: 'Upcode',
+      duration: '2024 - 2025',
+      description:
+        'Built full stack web and mobile applications through self-guided learning and practice. Gained hands-on experience in modern frameworks, databases, and best development practices.',
+      technologies: ['Next', 'PostgreSQL', 'java', 'Mongodb'],
     },
     {
-      title: "Frontend Developer Internship",
-      company: "Bridgeon",
-      duration: "2024",
-      description: "Built modern, interactive user interfaces for web applications. Focused on performance optimization and user experience enhancement.",
-      technologies: ["HTML", "CSS", "JavaScript","React"]
-    }
+      title: 'Frontend Developer Internship',
+      company: 'Bridgeon',
+      duration: '2024',
+      description:
+        'Built modern, interactive user interfaces for web applications. Focused on performance optimization and user experience enhancement.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+    },
   ];
 
   const skills = [
-    { category: "Frontend Development", items: ["React", "TypeScript", "Next.js", "Tailwind CSS", ], icon: <Code className="w-5 h-5" /> },
-    { category: "Backend Development", items: ["Node.js","java",  "Express",  "REST APIs"], icon: <Database className="w-5 h-5" /> },
-    { category: "DataBase", items: ["Mongodb", "SQL"], icon: <Smartphone className="w-5 h-5" /> },
+    { category: 'Frontend Development', items: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'], icon: <Code className="w-5 h-5" /> },
+    { category: 'Backend Development', items: ['Node.js', 'java', 'Express', 'REST APIs'], icon: <Database className="w-5 h-5" /> },
+    { category: 'DataBase', items: ['Mongodb', 'SQL'], icon: <Smartphone className="w-5 h-5" /> },
   ];
 
   const projects = [
-    
     {
-      title: "Crafting Showcase Web App",
-      description: "A modern web application to display and manage handmade crafts, featuring a beautiful gallery, categorized items, and a responsive design for a smooth user experience.",
-      technologies: ["React","Vite" ,"Tailwind CSS","TypeScript"],
-      image: "https://img.freepik.com/premium-photo/black-background-with-minimalist-crafting-supplies_1170794-256301.jpg",
-      github: "https://github.com/mohdsinan1/crafty-bites-gallery-showcase",
-      live: "https://crafty-bites-gallery-showcase.vercel.app/"
+      title: 'Crafting Showcase Web App',
+      description:
+        'A modern web application to display and manage handmade crafts, featuring a beautiful gallery, categorized items, and a responsive design for a smooth user experience.',
+      technologies: ['React', 'Vite', 'Tailwind CSS', 'TypeScript'],
+      image: 'https://img.freepik.com/premium-photo/black-background-with-minimalist-crafting-supplies_1170794-256301.jpg',
+      github: 'https://github.com/mohdsinan1/crafty-bites-gallery-showcase',
+      live: 'https://crafty-bites-gallery-showcase.vercel.app/',
     },
-      {
-        title: "Food Ordering Platform",
-        description: "A responsive food ordering web app designed to make browsing menus, adding to cart, and ordering your favorite meals seamless and enjoyable.",
-        technologies: ["React", "Tailwind CSS"],
-        image: "https://slidebazaar.com/wp-content/uploads/2024/08/Food-PPT-Theme-Introduction-Slide.jpg",
-        github: "https://github.com/mohdsinan1/Food_project",
-        live: "https://food-project-indol.vercel.app/"
-      },
-      {
-      title: "E-Commerce Platform",
-      description: "A modern and responsive frontend for a fashion e-commerce platform,Features include dynamic product listings, category filtering, interactive UI components, and a sleek fashion-focused design.",
-      technologies: ["Next","Tailwind CSS"],
-      image: "https://png.pngtree.com/background/20230519/original/pngtree-store-with-hanging-clothing-in-a-high-end-environment-picture-image_2654941.jpg",
-      github: "https://github.com/mohdsinan1/fashion-store",
-     
+    {
+      title: 'Food Ordering Platform',
+      description:
+        'A responsive food ordering web app designed to make browsing menus, adding to cart, and ordering your favorite meals seamless and enjoyable.',
+      technologies: ['React', 'Tailwind CSS'],
+      image: 'https://slidebazaar.com/wp-content/uploads/2024/08/Food-PPT-Theme-Introduction-Slide.jpg',
+      github: 'https://github.com/mohdsinan1/Food_project',
+      live: 'https://food-project-indol.vercel.app/',
     },
-      {
-        title: "Netflix clone",
-        description: "A responsive web application inspired by Netflix, featuring a sleek UI, movie browsing, and dynamic content fetching for an immersive streaming experience.",
-        technologies: ["React",],
-        image: "https://i.pinimg.com/originals/c8/bc/49/c8bc4907863e6f8fdc12e13e24d3587d.png",
-        github: "https://https://github.com/mohdsinan1/netflix",
-        live: "https://netflix-gilt-three.vercel.app/"
-      },
-       {
-  title: "Pharmacy Billing System (Backend)",
-  description: "A backend system built with Node.js and Express to manage pharmacy operations including billing, customer data, stock tracking, and user authentication. Supports RESTful APIs with secure JWT-based login and role-based access control for Admin and Users.",
-  technologies: ["Node.js", "Express", "PostgreSQL", "JWT"],
-  image: "https://img.freepik.com/premium-photo/pharmacy-background-dark-table_847423-4050.jpg",
-  github: "https://github.com/mohdsinan1/pharmacy-",
-  
-}
-
+    {
+      title: 'E-Commerce Platform',
+      description:
+        'A modern and responsive frontend for a fashion e-commerce platform,Features include dynamic product listings, category filtering, interactive UI components, and a sleek fashion-focused design.',
+      technologies: ['Next', 'Tailwind CSS'],
+      image:
+        'https://png.pngtree.com/background/20230519/original/pngtree-store-with-hanging-clothing-in-a-high-end-environment-picture-image_2654941.jpg',
+      github: 'https://github.com/mohdsinan1/fashion-store',
+    },
+    {
+      title: 'Netflix clone',
+      description:
+        'A responsive web application inspired by Netflix, featuring a sleek UI, movie browsing, and dynamic content fetching for an immersive streaming experience.',
+      technologies: ['React'],
+      image: 'https://i.pinimg.com/originals/c8/bc/49/c8bc4907863e6f8fdc12e13e24d3587d.png',
+      github: 'https://https://github.com/mohdsinan1/netflix',
+      live: 'https://netflix-gilt-three.vercel.app/',
+    },
+    {
+      title: 'Pharmacy Billing System (Backend)',
+      description:
+        'A backend system built with Node.js and Express to manage pharmacy operations including billing, customer data, stock tracking, and user authentication. Supports RESTful APIs with secure JWT-based login and role-based access control for Admin and Users.',
+      technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT'],
+      image: 'https://img.freepik.com/premium-photo/pharmacy-background-dark-table_847423-4050.jpg',
+      github: 'https://github.com/mohdsinan1/pharmacy-',
+    },
   ];
 
   // Loading Screen Component
@@ -156,13 +159,9 @@ function App() {
       <div className="fixed inset-0 bg-black flex items-center justify-center z-50">
         <div className="text-center">
           <div className="mb-8">
-            <h1 className="text-4xl md:text-6xl font-light tracking-widest text-white mb-4">
-              MOHD SINAN
-            </h1>
+            <h1 className="text-4xl md:text-6xl font-light tracking-widest text-white mb-4">MOHD SINAN</h1>
             <div className="w-48 h-px bg-white mx-auto mb-4"></div>
-            <p className="text-gray-400 font-sans tracking-wider uppercase text-sm">
-              Full Stack Developer
-            </p>
+            <p className="text-gray-400 font-sans tracking-wider uppercase text-sm">Full Stack Developer</p>
           </div>
 
           {/* Loading Animation */}
@@ -170,9 +169,7 @@ function App() {
             <div className="absolute inset-0 bg-white animate-loading-line"></div>
           </div>
 
-          <p className="text-gray-500 font-sans text-xs tracking-widest uppercase mt-6">
-            Loading Portfolio
-          </p>
+          <p className="text-gray-500 font-sans text-xs tracking-widest uppercase mt-6">Loading Portfolio</p>
         </div>
       </div>
     );
@@ -182,10 +179,7 @@ function App() {
     <div className="min-h-screen bg-black text-white font-serif">
       {/* Scroll Progress Bar */}
       <div className="fixed top-0 left-0 w-full h-1 bg-gray-900 z-50">
-        <div
-          className="h-full bg-white transition-all duration-150 ease-out"
-          style={{ width: `${scrollProgress}%` }}
-        ></div>
+        <div className="h-full bg-white transition-all duration-150 ease-out" style={{ width: `${scrollProgress}%` }}></div>
       </div>
 
       {/* Vertical Progress Indicator */}
@@ -212,29 +206,23 @@ function App() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-12">
-              {navItems.map((item) => (
+              {navItems.map(item => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-sm font-medium tracking-wide uppercase transition-all duration-300 relative ${activeSection === item.id
-                      ? 'text-white'
-                      : 'text-gray-400 hover:text-white'
-                    }`}
+                  className={`text-sm font-medium tracking-wide uppercase transition-all duration-300 relative ${
+                    activeSection === item.id ? 'text-white' : 'text-gray-400 hover:text-white'
+                  }`}
                 >
                   {item.label}
-                  {activeSection === item.id && (
-                    <div className="absolute -bottom-2 left-0 w-full h-px bg-white"></div>
-                  )}
+                  {activeSection === item.id && <div className="absolute -bottom-2 left-0 w-full h-px bg-white"></div>}
                 </button>
               ))}
             </div>
 
             {/* Mobile menu button */}
             <div className="md:hidden">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="p-2 text-gray-400 hover:text-white transition-colors"
-              >
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 text-gray-400 hover:text-white transition-colors">
                 {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
             </div>
@@ -245,14 +233,13 @@ function App() {
         {isMenuOpen && (
           <div className="md:hidden bg-black border-t border-gray-800">
             <div className="px-6 py-4 space-y-4">
-              {navItems.map((item) => (
+              {navItems.map(item => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`block w-full text-left text-sm font-medium tracking-wide uppercase transition-colors ${activeSection === item.id
-                      ? 'text-white'
-                      : 'text-gray-400 hover:text-white'
-                    }`}
+                  className={`block w-full text-left text-sm font-medium tracking-wide uppercase transition-colors ${
+                    activeSection === item.id ? 'text-white' : 'text-gray-400 hover:text-white'
+                  }`}
                 >
                   {item.label}
                 </button>
@@ -268,17 +255,13 @@ function App() {
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="mb-8">
-              <h1 className="text-6xl md:text-8xl font-light mb-4 tracking-wider">
-                MOHD SINAN
-              </h1>
+              <h1 className="text-6xl md:text-8xl font-light mb-4 tracking-wider">MOHD SINAN</h1>
               <div className="w-32 h-px bg-white mx-auto mb-8"></div>
-              <h2 className="text-xl md:text-2xl text-gray-300 font-light tracking-widest uppercase">
-                Full Stack Developer
-              </h2>
+              <h2 className="text-xl md:text-2xl text-gray-300 font-light tracking-widest uppercase">Full Stack Developer</h2>
             </div>
             <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed font-sans">
-              Crafting elegant digital solutions with precision and passion.
-              Specializing in modern web technologies and innovative user experiences.
+              Crafting elegant digital solutions with precision and passion. Specializing in modern web technologies and innovative user
+              experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
@@ -288,13 +271,15 @@ function App() {
                 View Portfolio
                 <ArrowRight className="w-4 h-4" />
               </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="px-8 py-4 text-white hover:text-gray-300 transition-all duration-300 font-medium tracking-wide uppercase flex items-center justify-center gap-3"
+              <a
+                href="/public/Mohd sinan..pdf" 
+                download
               >
-                <Download className="w-4 h-4" />
-                Download CV
-              </button>
+                <button className="px-8 py-4 text-white hover:text-gray-300 transition-all duration-300 font-medium tracking-wide uppercase flex items-center justify-center gap-3">
+                  <Download className="w-4 h-4" />
+                  Download Resume
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -309,22 +294,19 @@ function App() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="mb-12">
-                <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
-                  About Me
-                </h2>
+                <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">About Me</h2>
                 <div className="w-16 h-px bg-white mb-8"></div>
               </div>
 
               <div className="space-y-6 font-sans">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  I’m a Full Stack Developer with a strong focus on building modern, user-friendly, and efficient web applications.
-                  I enjoy transforming ideas into real-world digital solutions that are both visually appealing and highly functional.
-                  I’m passionate about continuous learning and delivering high-quality work that adds value.
+                  I’m a Full Stack Developer with a strong focus on building modern, user-friendly, and efficient web applications. I enjoy
+                  transforming ideas into real-world digital solutions that are both visually appealing and highly functional. I’m
+                  passionate about continuous learning and delivering high-quality work that adds value.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed">
                   Feel free to explore my portfolio to see some of my projects and get in touch if you’d like to work together.
                 </p>
-
               </div>
             </div>
 
@@ -341,7 +323,7 @@ function App() {
                   <div className="flex justify-center mb-4">
                     <Award className="w-6 h-6 text-white" />
                   </div>
-                  <div className="text-2xl font-light mb-2">3+</div>
+                  <div className="text-2xl font-light mb-2">4+</div>
                   <div className="text-sm text-gray-400 uppercase tracking-wide">Projects Completed</div>
                 </div>
               </div>
@@ -365,9 +347,7 @@ function App() {
       <section id="experience" className="py-24 border-t border-gray-800">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
-              Experience
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">Experience</h2>
             <div className="w-16 h-px bg-white mb-8"></div>
           </div>
 
@@ -405,9 +385,7 @@ function App() {
       <section id="skills" className="py-24 border-t border-gray-800">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
-              Skills & Expertise
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">Skills & Expertise</h2>
             <div className="w-16 h-px bg-white mb-8"></div>
           </div>
 
@@ -415,9 +393,7 @@ function App() {
             {skills.map((skillGroup, index) => (
               <div key={index} className="group">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="text-white group-hover:text-gray-300 transition-colors">
-                    {skillGroup.icon}
-                  </div>
+                  <div className="text-white group-hover:text-gray-300 transition-colors">{skillGroup.icon}</div>
                   <h3 className="text-xl font-light text-white tracking-wide">{skillGroup.category}</h3>
                 </div>
                 <div className="space-y-3 pl-9">
@@ -440,9 +416,7 @@ function App() {
       <section id="projects" className="py-24 border-t border-gray-800">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
-              Selected Works
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">Selected Works</h2>
             <div className="w-16 h-px bg-white mb-8"></div>
           </div>
 
@@ -465,10 +439,7 @@ function App() {
                     <p className="text-gray-400 mb-6 leading-relaxed font-sans text-lg">{project.description}</p>
                     <div className="flex flex-wrap gap-3 mb-8">
                       {project.technologies.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="px-3 py-1 border border-gray-700 text-gray-300 text-sm font-sans tracking-wide"
-                        >
+                        <span key={techIndex} className="px-3 py-1 border border-gray-700 text-gray-300 text-sm font-sans tracking-wide">
                           {tech}
                         </span>
                       ))}
@@ -501,13 +472,11 @@ function App() {
       <section id="contact" className="py-24 border-t border-gray-800">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">
-              Get In Touch
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide">Get In Touch</h2>
             <div className="w-16 h-px bg-white mb-8"></div>
             <p className="text-xl text-gray-400 max-w-2xl font-sans leading-relaxed">
-              I'm always interested in discussing new opportunities and innovative projects.
-              Let's connect and explore how we can collaborate.
+              I'm always interested in discussing new opportunities and innovative projects. Let's connect and explore how we can
+              collaborate.
             </p>
           </div>
 
@@ -567,9 +536,7 @@ function App() {
               </div>
             </div>
 
-          
-      <ContactForm />
-    
+            <ContactForm />
           </div>
         </div>
       </section>
@@ -577,9 +544,7 @@ function App() {
       {/* Footer */}
       <footer className="py-12 border-t border-gray-800">
         <div className="max-w-6xl mx-auto px-6 lg:px-8 text-center">
-          <p className="text-gray-500 font-sans tracking-wide">
-            © 2024 Mohd Sinan. All rights reserved.
-          </p>
+          <p className="text-gray-500 font-sans tracking-wide">© 2024 Mohd Sinan. All rights reserved.</p>
         </div>
       </footer>
     </div>
