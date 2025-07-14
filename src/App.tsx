@@ -151,6 +151,15 @@ function App() {
       image: 'https://img.freepik.com/premium-photo/pharmacy-background-dark-table_847423-4050.jpg',
       github: 'https://github.com/mohdsinan1/pharmacy-',
     },
+    {
+      title: 'Amazon clone',
+      description:
+       'An e-commerce web application inspired by Amazon. Features include user authentication, product browsing, shopping cart functionality, order placement, and responsive design for seamless shopping across devices.',
+      technologies: ['HTML','Bootstrap'],
+      image: 'https://wallpaperaccess.com/full/1383587.jpg',
+      github: 'https://github.com/mohdsinan1/Amazon-',
+      live: 'https://mohdsinan1.github.io/Amazon-/'
+    }
   ];
 
   // Loading Screen Component
