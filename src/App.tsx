@@ -272,7 +272,7 @@ function App() {
                 <ArrowRight className="w-4 h-4" />
               </button>
               <a
-                href="/public/Mohd sinan..pdf" 
+                href="/public/Mohd sinan.pdf" 
                 download
               >
                 <button className="px-8 py-4 text-white hover:text-gray-300 transition-all duration-300 font-medium tracking-wide uppercase flex items-center justify-center gap-3">
