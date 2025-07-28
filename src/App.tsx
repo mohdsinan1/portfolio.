@@ -107,6 +107,17 @@ function App() {
   ];
 
   const projects = [
+
+     {
+      title: 'E-Commerce Platform',
+      description:
+        'A modern and responsive frontend for a fashion e-commerce platform,Features include dynamic product listings, category filtering, interactive UI components, and a sleek fashion-focused design.',
+      technologies: ['Next', 'BootStrap','TypeScript'],
+      image:
+        'https://png.pngtree.com/background/20230519/original/pngtree-store-with-hanging-clothing-in-a-high-end-environment-picture-image_2654941.jpg',
+      github: 'https://github.com/mohdsinan1/fashion-store',
+        live:   'https://fashion-store-gysu.vercel.app/'
+    },
     {
       title: 'Crafting Showcase Web App',
       description:
@@ -124,15 +135,6 @@ function App() {
       image: 'https://slidebazaar.com/wp-content/uploads/2024/08/Food-PPT-Theme-Introduction-Slide.jpg',
       github: 'https://github.com/mohdsinan1/Food_project',
       live: 'https://food-project-indol.vercel.app/',
-    },
-    {
-      title: 'E-Commerce Platform',
-      description:
-        'A modern and responsive frontend for a fashion e-commerce platform,Features include dynamic product listings, category filtering, interactive UI components, and a sleek fashion-focused design.',
-      technologies: ['Next', 'Tailwind CSS'],
-      image:
-        'https://png.pngtree.com/background/20230519/original/pngtree-store-with-hanging-clothing-in-a-high-end-environment-picture-image_2654941.jpg',
-      github: 'https://github.com/mohdsinan1/fashion-store',
     },
     {
       title: 'Netflix clone',
